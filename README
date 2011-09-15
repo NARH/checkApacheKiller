@@ -1,0 +1,16 @@
+* checkApacheKiller.pl
+
+	Simple Apache Killer checker.
+
+* usage
+
+	perl checkApacheKiller.pl http://example.com/images/sample.jpg
+
+	for virtual host internal
+
+	perl checkApacheKiller.pl http://example.com/images/sample.jpg 127.0.0.1
+
+
+
+
+
