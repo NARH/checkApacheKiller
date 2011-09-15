@@ -15,7 +15,6 @@ use IO::Socket;
 
 sub usage {
 	print "Apache Remote Denial of Service (memory exhaustion)\n";
-	print "by Kingcope\n";
 	print "usage: perl $0 <url> <IP address>\n";
 	print "example: perl $0 'http://www.example.com:8080/images/sample1.jpg'\n";
 }
