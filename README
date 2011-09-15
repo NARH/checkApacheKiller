@@ -10,7 +10,15 @@
 
 	perl checkApacheKiller.pl http://example.com/images/sample.jpg 127.0.0.1
 
+* EXAMPLE
 
+	$ perl checkApacheKiller.pl http://localhost/images/sample.jpg
+	Connect localhost:80
+	OK:The host is vulnerable to apache killer
 
+	for japanese
+	$ env LANG=ja_JP.UTF=8 checkApacheKiller.pl http://localhost/images/sample.jpg
+	Connect localhost:80
+	OK:このホストは Apache Killer 対策済みです
 
 
