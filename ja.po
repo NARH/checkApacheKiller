@@ -17,8 +17,8 @@ msgstr ""
 
 #: checkApacheKiller.pl:79
 msgid "Host does not seem vulnerable"
-msgstr "このホストは Apache Killer 未対策です"
+msgstr "このホストは Apache Killer 対策済みです"
 
 #: checkApacheKiller.pl:83
 msgid "The host is vulnerable to apache killer"
-msgstr "このホストは Apache Killer 対策済みです"
+msgstr "このホストは Apache Killer 未対策です"

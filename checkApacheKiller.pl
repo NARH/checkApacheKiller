@@ -43,6 +43,10 @@ sub testapache {
 	my $p		= "HEAD $path HTTP/1.1\r\nHost: $urlHost\r\nRange:bytes=0-\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n";
 	print $sock $p;
 
+#	while(<$sock>) {
+#		warn $_;
+#	}
+
 	my $x = <$sock>;
 	if ($x =~ /Partial/) {
 		return 1;	
@@ -69,9 +73,9 @@ if ($#ARGV >= 0) {
 $host			= ( $#ARGV >= 1 ? $ARGV[1] : $urlHost );
 
 if (testapache( $host, $port, $urlHost, $path ) == 0) {
-	printf("NG:%s\n", loc( "Host does not seem vulnerable" ));
+	printf("OK:%s\n", loc( "Host does not seem vulnerable" ));
 }
 else {
-	printf("OK:%s\n", loc( "The host is vulnerable to apache killer" ));
+	printf("NG:%s\n", loc( "The host is vulnerable to apache killer" ));
 }
 exit;	
